@@ -2,9 +2,9 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_invoice_schools'
-  s.version     = '3.0.0'
+  s.version     = SpreeInvoiceSchools::Version
   s.summary     = 'Spree 3.0.0+ extension for creating a new payment method for invoicing schools.'
-  s.description = 'Spree 3.0.0+ extension for creating a new payment method for invoicing schools.'
+  s.description = s.summary
   s.required_ruby_version = '>= 2.0.0'
 
   s.author    = 'QuintinAdam'
@@ -28,4 +28,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'selenium-webdriver'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'pry'
 end
