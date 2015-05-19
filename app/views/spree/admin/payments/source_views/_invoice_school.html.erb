@@ -1,0 +1,13 @@
+<fieldset data-hook="invoice_school">
+  <legend><%= Spree.t(:invoice_school) %></legend>
+  <table class="table table-condensed table-bordered">
+    <tr>
+      <th width="20%"><%= Spree.t(:school_name) %>:</th>
+      <td><%= payment.source.school_name %></td>
+    </tr>
+    <tr>
+      <th><%= Spree.t(:tax_id_number) %>:</th>
+      <td><%= payment.source.tax_id_number %></td>
+    </tr>
+  </table>
+</fieldset>

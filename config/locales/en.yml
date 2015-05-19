@@ -5,3 +5,4 @@ en:
   spree:
     school_name: "School Name"
     tax_id_number: "School Tax Id Number"
+    invoice_school: "Invoice School"
