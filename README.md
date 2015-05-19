@@ -1,7 +1,7 @@
 SpreeInvoiceSchools
 ===================
 
-Introduction goes here.
+Spree 3.0.0+ extension for creating a new payment method for invoicing schools.
 
 Installation
 ------------
@@ -9,7 +9,7 @@ Installation
 Add spree_invoice_schools to your Gemfile:
 
 ```ruby
-gem 'spree_invoice_schools'
+gem 'spree_invoice_schools', github: 'QuintinAda/spree_invoice_schools', branch: 'master'
 ```
 
 Bundle your dependencies and run the installation generator:
@@ -36,4 +36,4 @@ Simply add this require statement to your spec_helper:
 require 'spree_invoice_schools/factories'
 ```
 
-Copyright (c) 2015 [name of extension creator], released under the New BSD License
+Copyright (c) 2015 Quintin Adam, released under the New BSD License
