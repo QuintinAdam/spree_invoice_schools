@@ -30,7 +30,7 @@ module Spree
     end
 
     def source_required?
-      false
+      true
     end
 
   end

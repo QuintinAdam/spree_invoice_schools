@@ -1,6 +1,6 @@
 class AddSpreeSchoolInvoiceCheckouts < ActiveRecord::Migration
   def change
-    create_table :spree_school_invoice_checkouts do |t|
+    create_table :spree_invoice_school_checkouts do |t|
       t.string :tax_id_number
       t.string :school_name
       t.string :payer_id
@@ -8,7 +8,7 @@ class AddSpreeSchoolInvoiceCheckouts < ActiveRecord::Migration
       t.datetime :refunded_at
       t.string :refund_type
 
-      t.timestamp
+      t.timestamps null: false
     end
   end
 end
