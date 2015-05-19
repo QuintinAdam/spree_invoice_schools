@@ -1,11 +1,16 @@
 # encoding: UTF-8
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
+require 'spree_invoice_schools/version'
+
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_invoice_schools'
-  s.version     = SpreeInvoiceSchools::Version
+  s.version     =  '3.0.0' #SpreeInvoiceSchools::Version
   s.summary     = 'Spree 3.0.0+ extension for creating a new payment method for invoicing schools.'
   s.description = s.summary
-  s.required_ruby_version = '>= 2.0.0'
+  s.required_ruby_version = '>= 2.1.0'
 
   s.author    = 'QuintinAdam'
   s.email     = 'QuintinJAdam@gamil.com'
