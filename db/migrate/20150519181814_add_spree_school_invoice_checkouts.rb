@@ -4,7 +4,7 @@ class AddSpreeSchoolInvoiceCheckouts < ActiveRecord::Migration
       t.string :tax_id_number
       t.string :school_name
       t.string :payer_id
-      t.string :state, defualt: "unverified"
+      t.string :state, defualt: "completed"
       t.datetime :refunded_at
       t.string :refund_type
 
