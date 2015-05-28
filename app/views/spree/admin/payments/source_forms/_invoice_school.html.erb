@@ -14,4 +14,18 @@
       <% end %>
       <%= text_field_tag "#{param_prefix}[tax_id_number]", '', {id: 'tax_id_number', class: 'form-control required'} %>
     </p>
+    <p class="field" data-hook="contact_name">
+      <%= label_tag "contact_name" do %>
+        <%= Spree.t(:contact_name) %>
+        <abbr class="required" title="required">*</abbr>
+      <% end %>
+      <%= text_field_tag "#{param_prefix}[contact_name]", '', {id: 'contact_name', class: 'form-control required'} %>
+    </p>
+    <p class="field" data-hook="contact_email">
+      <%= label_tag "contact_email" do %>
+        <%= Spree.t(:contact_email) %>
+        <abbr class="required" title="required">*</abbr>
+      <% end %>
+      <%= email_field_tag "#{param_prefix}[contact_email]", '', {id: 'contact_email', class: 'form-control required'} %>
+    </p>
 </div>

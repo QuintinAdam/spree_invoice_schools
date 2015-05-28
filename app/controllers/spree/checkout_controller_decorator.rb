@@ -34,7 +34,7 @@ module Spree
 
     def create_source_for_school_invoice
       if newest_payment = @order.payments.last
-        newest_payment.source = InvoiceSchoolCheckout.create(school_name: params['order']['payments_attributes'][0]['source_attributes']['school_name'], tax_id_number: params['order']['payments_attributes'][0]['source_attributes']['tax_id_number'])
+        newest_payment.source = InvoiceSchoolCheckout.create(school_name: params['order']['payments_attributes'][0]['source_attributes']['school_name'], tax_id_number: params['order']['payments_attributes'][0]['source_attributes']['tax_id_number'], contact_name: params['order']['payments_attributes'][0]['source_attributes']['contact_name'], contact_email: params['order']['payments_attributes'][0]['source_attributes']['contact_email'])
         newest_payment.save
       end
     end

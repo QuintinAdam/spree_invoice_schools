@@ -9,5 +9,13 @@
       <th><%= Spree.t(:tax_id_number) %>:</th>
       <td><%= payment.source.tax_id_number %></td>
     </tr>
+    <tr>
+      <th><%= Spree.t(:contact_name) %>:</th>
+      <td><%= payment.source.contact_name %></td>
+    </tr>
+    <tr>
+      <th><%= Spree.t(:contact_email) %>:</th>
+      <td><%= payment.source.contact_email %></td>
+    </tr>
   </table>
 </fieldset>
