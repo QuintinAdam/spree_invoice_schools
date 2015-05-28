@@ -6,3 +6,5 @@ en:
     school_name: "School Name"
     tax_id_number: "School Tax Id Number"
     invoice_school: "Invoice School"
+    contact_name: "School Contact Name"
+    contact_email: "School Contact Email"
