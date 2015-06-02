@@ -5,7 +5,7 @@
         <%= Spree.t(:school_name) %>
         <abbr class="required" title="required">*</abbr>
       <% end %>
-      <%= text_field_tag "#{param_prefix}[school_name]", "#{ !!@order.billing_company ? @order.billing_company : (@order.billing_firstname + @order.billing_lastname) }", { id: "school_name_#{payment_method.id}", class: 'form-control required'} %>
+      <%= text_field_tag "#{param_prefix}[school_name]", "#{ !!@order.bill_address.try(:company) ? @order.bill_address.try(:company) : (@order.billing_firstname + @order.billing_lastname) }", { id: "school_name_#{payment_method.id}", class: 'form-control required'} %>
     </p>
     <p class="field" data-hook="tax_id_number">
       <%= label_tag "tax_id_number" do %>
