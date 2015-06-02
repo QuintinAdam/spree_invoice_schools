@@ -9,7 +9,7 @@ Installation
 Add spree_invoice_schools to your Gemfile:
 
 ```ruby
-gem 'spree_invoice_schools', github: 'QuintinAdam/spree_invoice_schools', branch: 'master'
+gem 'spree_invoice_schools', github: 'QuintinAdam/spree_invoice_schools', branch: '3-0-stable'
 ```
 
 Bundle your dependencies and run the installation generator:
